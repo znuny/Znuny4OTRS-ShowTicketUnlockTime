@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <Name>Znuny4OTRS-ShowTicketUnlockTime</Name>
+    <Version>1.0.1</Version>
+    <Framework>3.0.x</Framework>
+    <Framework>3.1.x</Framework>
+    <Vendor>Znuny GmbH</Vendor>
+    <URL>http://znuny.com/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">This feature shows you the ticket unlock time in ticket zoom view.</Description>
+    <Description Lang="de">Diese Funktionalität zeigt Ihnen die Ticket-Entsperrzeit in der Ticket-Detail-Ansicht.</Description>
+    <Filelist>
+        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRS-ShowTicketUnlockTime.xml"/>
+        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterZnunyTicketUnlockTime.pm"/>
+    </Filelist>
+    <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
+        <br/>
+        <br/>
+        Welcome to <u>Znuny4OTRS</u>!
+        <br/>
+        <br/>
+
+        <p>
+        You are about to install the feature to show the ticket unlock time in ticket zoom view. 
+        </p>
+<br/>
+<br/>
+        <p>
+        Your Znuny Team!
+        <br/>
+        <a href="http://znuny.com/" target="_blank">http://znuny.com</a>
+        </p>
+        <br/>
+        <br/>
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Pre-Installations-Information" Lang="de"><![CDATA[
+        <br/>
+        <br/>
+        Herzlich Willkommen zu <u>Znuny4OTRS</u>!
+        <br/>
+        <br/>
+        <p>
+        Sie sind gerade dabei, die Funktionalität zur Anzeige der Ticket-Entsperrzeit in der Ticket-Detail-Ansicht zu installieren.
+        </p>
+        <br/>
+        <br/>
+        <p>
+        Ihr Znuny Team!
+        <br/>
+        <a href="http://znuny.com/" target="_blank">http://znuny.com</a>
+        </p>
+        <br/>
+        <br/>
+    ]]></IntroInstall>
+</otrs_package>
