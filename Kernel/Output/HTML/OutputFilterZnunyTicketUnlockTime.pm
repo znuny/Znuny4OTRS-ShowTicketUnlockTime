@@ -23,19 +23,20 @@ sub new {
     my ( $Type, %Param ) = @_;
 
     # allocate new hash for object
-    my $Self = {};
+    my $Self = \%Param;
     bless( $Self, $Type );
-
-    # check needed objects
-    for (qw(DBObject EncodeObject TimeObject ConfigObject LogObject MainObject LayoutObject)) {
-        $Self->{$_} = $Param{$_} || die "Got no $_!";
-    }
 
     return $Self;
 }
 
 sub Run {
     my ( $Self, %Param ) = @_;
+
+    # check needed objects (needed to be done here because of OTRS 3.0 + Survey package ->
+    # public.pl?Action=PublicSurvey -> Got no DBObject! at)
+    for (qw(DBObject EncodeObject TimeObject ConfigObject LogObject MainObject LayoutObject)) {
+        return if !$Self->{$_};
+    }
 
     # check needed stuff
     if ( !defined $Param{Data} ) {
