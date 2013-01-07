@@ -20,7 +20,7 @@ Prerequisites
 
 Download
 ========
-For download see https://github.com/znuny/Znuny4OTRS-ShowTicketUnlockTime/downloads/
+For download see http://znuny.com/d/
 
 Commercial Support
 ==================
