@@ -1,10 +1,10 @@
 Znuny4OTRS-ShowTicketUnlockTime
 ===============================
-This feature shows you the ticket unlock time in ticket zoom view.
+This feature shows the ticket unlock time in ticket zoom view.
 
-The unlock time is only show if:
+The unlock time is only shown if:
 * Ticket is locked.
-* Lock timeout need to be configured for the queue.
+* Lock timeout needs to be configured for the queue.
 
 Configuration
 =============
@@ -17,6 +17,7 @@ Download the package and install it via admin interface -> package manager.
 Prerequisites
 * OTRS 3.0
 * OTRS 3.1
+* OTRS 3.2
 
 Download
 ========

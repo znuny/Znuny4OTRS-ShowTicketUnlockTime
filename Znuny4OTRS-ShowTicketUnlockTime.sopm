@@ -4,10 +4,11 @@
     <Version>1.0.2</Version>
     <Framework>3.0.x</Framework>
     <Framework>3.1.x</Framework>
+    <Framework>3.2.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <Description Lang="en">This feature shows you the ticket unlock time in ticket zoom view.</Description>
+    <Description Lang="en">This feature shows the ticket unlock time in ticket zoom view.</Description>
     <Description Lang="de">Diese Funktionalität zeigt Ihnen die Ticket-Entsperrzeit in der Ticket-Detail-Ansicht.</Description>
     <Filelist>
         <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRS-ShowTicketUnlockTime.xml"/>
