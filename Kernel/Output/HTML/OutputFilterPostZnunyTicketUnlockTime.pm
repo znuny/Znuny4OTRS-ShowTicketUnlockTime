@@ -1,5 +1,4 @@
 # --
-# Kernel/Output/HTML/OutputFilterPostZnunyTicketUnlockTime.pm - add ticket unlock time to ticket zoom
 # Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see

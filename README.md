@@ -21,7 +21,7 @@ Download the package and install it via admin interface -> package manager.
 
 **Prerequisites**
 
-- OTRS 4.0
+- OTRS 5.0
 
 **Download**
 

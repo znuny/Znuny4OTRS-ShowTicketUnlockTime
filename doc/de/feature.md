@@ -21,7 +21,7 @@ Laden Sie das Paket und installieren Sie es über das Admin-Interface -> Paketma
 
 **Voraussetzungen**
 
-- OTRS 4.0
+- OTRS 5.0
 
 **Download**
 

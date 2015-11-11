@@ -2,7 +2,7 @@
 <otrs_config version="1.0" init="Application">
     <ConfigItem Name="Frontend::Output::FilterElementPost###OutputFilterPostZnunyTicketUnlockTime" Required="0" Valid="1">
         <Description Translatable="1">Defines the filter that processes the HTML temlates to add ticket unlock time in ticket zoom.</Description>
-        <Group>Ticket</Group>
+        <Group>Znuny4OTRS-ShowTicketUnlockTime</Group>
         <SubGroup>Frontend::Agent::Ticket::ViewZoom</SubGroup>
         <Setting>
             <Hash>
