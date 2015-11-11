@@ -8,8 +8,8 @@ Diese Erweiterung zeigt Ihnen in den Ticket-Informationen an, wann das Ticket wi
 
 Der Freigabe-Zeitintervall wird nur angezeigt wenn:
 
-* Ticket muss gesperrt sein.
-* Freigabe-Zeitintervall muss in der Queue Einstellung konfiguriert sein.
+* das Ticket gesperr ist 
+* und der Freigabe-Zeitintervall in der Queue Einstellung konfiguriert ist
 
 **Konfiguration**
 
