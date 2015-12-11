@@ -6,7 +6,7 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-package Kernel::Output::HTML::OutputFilterPostZnunyTicketUnlockTime;
+package Kernel::Output::HTML::FilterElementPost::ZnunyTicketUnlockTime;
 
 use strict;
 use warnings;

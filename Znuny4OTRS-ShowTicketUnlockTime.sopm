@@ -12,8 +12,8 @@
     <Description Lang="en">This feature shows the ticket unlock time in ticket zoom view.</Description>
     <Description Lang="de">Diese Funktionalität zeigt Ihnen die Ticket-Entsperrzeit in der Ticket-Detail-Ansicht.</Description>
     <Filelist>
-        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRS-ShowTicketUnlockTime.xml"/>
-        <File Permission="644" Location="Kernel/Output/HTML/OutputFilterPostZnunyTicketUnlockTime.pm"/>
+        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRSShowTicketUnlockTime.xml"/>
+        <File Permission="644" Location="Kernel/Output/HTML/FilterElementPost/ZnunyTicketUnlockTime.pm"/>
     </Filelist>
     <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
         <br/>
