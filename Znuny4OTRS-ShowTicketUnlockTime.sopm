@@ -13,7 +13,6 @@
     <Filelist>
         <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRS-ShowTicketUnlockTime.xml"/>
         <File Permission="644" Location="Kernel/Output/HTML/OutputFilterPostZnunyTicketUnlockTime.pm"/>
-        <File Location="doc/de/Znuny4OTRS-ShowTicketUnlockTime.pdf" Permission="644"/>
     </Filelist>
     <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
         <br/>
@@ -21,7 +20,6 @@
         Welcome to <u>Znuny4OTRS</u>!
         <br/>
         <br/>
-
         <p>
         You are about to install a feature to show the ticket unlock time in ticket zoom view.
         </p>
