@@ -30,23 +30,25 @@ sub Run {
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
     my $LogObject    = $Kernel::OM->Get('Kernel::System::Log');
-    my $TimeObject   = $Kernel::OM->Get('Kernel::System::Time');
+    my $TimeObject   = $Kernel::OM->Get('Kernel::System::ZnunyTime');
+    my $QueueObject  = $Kernel::OM->Get('Kernel::System::Queue');
 
-    # return if it's not ticket zoom
-    return if $Param{TemplateFile} !~ /^(AgentTicketZoom)/;
+    # return 1 if it's not ticket zoom
+    return 1 if $Param{TemplateFile} !~ /^(AgentTicketZoom)/;
 
-    # return if there is no ticket unlock time
+    # return 1 if there is no ticket unlock time
     my $TicketID = $ParamObject->GetParam( Param => 'TicketID' );
-    return if !$TicketID;
-    my %Ticket = $TicketObject->TicketGet( TicketID => $TicketID );
-    return if !%Ticket;
-    return if !$Ticket{UnlockTimeout};
-    return if $Ticket{Lock} ne 'lock';
+    return 1 if !$TicketID;
 
-    # return if there is no queue unlock time
-    my $QueueObject = $Kernel::OM->Get('Kernel::System::Queue');
+    my %Ticket = $TicketObject->TicketGet( TicketID => $TicketID );
+
+    return 1 if !%Ticket;
+    return 1 if !$Ticket{UnlockTimeout};
+    return 1 if $Ticket{Lock} ne 'lock';
+
+    # return 1 if there is no queue unlock time
     my %Queue = $QueueObject->QueueGet( ID => $Ticket{QueueID} );
-    return if !$Queue{UnlockTimeout};
+    return 1 if !$Queue{UnlockTimeout};
 
     # do time calculation
     my $TimeDest = $TimeObject->DestinationTime(
@@ -56,9 +58,11 @@ sub Run {
     );
 
     my $TimeDestHuman = $TimeDest - $TimeObject->SystemTime();
+
     $TimeDest = $TimeObject->SystemTime2TimeStamp(
         SystemTime => $TimeDest,
     );
+
     $TimeDestHuman = $LayoutObject->CustomerAgeInHours(
         Age   => $TimeDestHuman,
         Space => ' ',
@@ -67,7 +71,7 @@ sub Run {
     # information markup
     my $HTML = '
     <label>' . $LayoutObject->{LanguageObject}->Translate('Unlock timeout') . ':</label>
-    <p class="Value">
+    <p id="UnlockTimeout" class="Value">
         ' . $TimeDestHuman . '
         <br>
         ' . $TimeDest . '
@@ -78,8 +82,8 @@ sub Run {
     # add information
     return 1 if ${ $Param{Data} } !~ m{ <div [^>]* ContentColumn [^>]* > }xmsi;
 
-    my $CustomerIDLabel = '<label>' . $LayoutObject->{LanguageObject}->Translate('CustomerID') . ':</label>';
-    ${ $Param{Data} } =~ s{\Q$CustomerIDLabel\E .*? <div \s class="Clear"><\/div> }{$& $HTML}xms;
+    my $QueueLabel = '<label>' . $LayoutObject->{LanguageObject}->Translate('Queue') . ':</label>';
+    ${ $Param{Data} } =~ s{\Q$QueueLabel\E .*? <div \s class="Clear"><\/div> }{$& $HTML}xms;
 
     return 1;
 }
