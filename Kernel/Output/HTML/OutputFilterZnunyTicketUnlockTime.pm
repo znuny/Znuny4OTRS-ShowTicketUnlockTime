@@ -1,8 +1,5 @@
 # --
-# Kernel/Output/HTML/OutputFilterZnunyTicketUnlockTime.pm - add ticket unlock time to ticket zoom
-# Copyright (C) 2012 Znuny GmbH, http://znuny.com/
-# --
-# $Id: $
+# Copyright (C) 2012-2019 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -17,7 +14,6 @@ use warnings;
 use Kernel::System::Queue;
 
 use vars qw(@ISA $VERSION);
-$VERSION = qw($Revision: 1.0 $) [1];
 
 sub new {
     my ( $Type, %Param ) = @_;
@@ -34,13 +30,16 @@ sub Run {
 
     # check needed objects (needed to be done here because of OTRS 3.0 + Survey package ->
     # public.pl?Action=PublicSurvey -> Got no DBObject! at)
-    for (qw(DBObject EncodeObject TimeObject ConfigObject LogObject MainObject LayoutObject)) {
-        return if !$Self->{$_};
+    for my $Needed (qw(DBObject EncodeObject TimeObject ConfigObject LogObject MainObject LayoutObject)) {
+        return if !$Self->{$Needed};
     }
 
     # check needed stuff
     if ( !defined $Param{Data} ) {
-        $Self->{LogObject}->Log( Priority => 'error', Message => 'Need Data!' );
+        $Self->{LogObject}->Log(
+            Priority => 'error',
+            Message  => 'Need Data!'
+        );
         $Self->{LayoutObject}->FatalDie();
     }
 
@@ -56,7 +55,7 @@ sub Run {
     return if $Ticket{Lock} ne 'lock';
 
     # return if there is no queue unlock time
-    my $QueueObject = Kernel::System::Queue->new( %{ $Self } );
+    my $QueueObject = Kernel::System::Queue->new( %{$Self} );
     my %Queue = $QueueObject->QueueGet( ID => $Ticket{QueueID} );
     return if !$Queue{UnlockTimeout};
 
@@ -71,12 +70,12 @@ sub Run {
         SystemTime => $TimeDest,
     );
     $TimeDestHuman = $Self->{LayoutObject}->CustomerAgeInHours(
-         Age   => $TimeDestHuman, 
-         Space => ' ',
+        Age   => $TimeDestHuman,
+        Space => ' ',
     );
 
     # information markup
-my $HTML = ' 
+    my $HTML = '
     <label>$Text{"Unlock timeout"}:</label>
     <p class="Value">
         ' . $TimeDestHuman . '
