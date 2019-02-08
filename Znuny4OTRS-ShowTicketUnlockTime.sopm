@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-ShowTicketUnlockTime</Name>
-    <Version>1.0.7</Version>
+    <Version>3.2.8</Version>
+    <ChangeLog Version="3.2.8" Date="2019-02-08 12:25:01 +0100">Applied codepolicy.</ChangeLog>
     <ChangeLog Version="1.0.7" Date="2019-02-05 18:54:24 +0100">Tidied code.</ChangeLog>
     <Framework>3.0.x</Framework>
     <Framework>3.1.x</Framework>
