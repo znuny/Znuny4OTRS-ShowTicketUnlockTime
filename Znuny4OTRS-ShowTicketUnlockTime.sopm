@@ -8,7 +8,7 @@
     <ChangeLog Version="1.2.0" Date="2015-11-11 11:13:47 UTC">Ported to OTRS 5.0.</ChangeLog>
     <ChangeLog Version="1.1.0" Date="2015-06-11 15:50:51 UTC">Ported to 4.0.</ChangeLog>
     <Framework>6.0.x</Framework>
-    <PackageRequired Version="6.0.38">Znuny4OTRS-Repo</PackageRequired>
+    <PackageRequired Version="6.0.56">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
@@ -17,7 +17,7 @@
     <Filelist>
         <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSShowTicketUnlockTime.xml"/>
         <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/ZnunyTicketUnlockTime.pm"/>
-        <File Permission="660" Location="scripts/test/Selenium/Agent/Znuny4OTRSShowTicketUnlockTime.t"/>
+        <File Permission="660" Location="scripts/test/Znuny4OTRSShowTicketUnlockTime/Selenium/Output/HTML/FilterElementPost/ZnunyTicketUnlockTime.t"/>
     </Filelist>
     <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
         <br/>

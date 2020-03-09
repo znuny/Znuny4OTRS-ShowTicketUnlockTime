@@ -1,4 +1,7 @@
-![Znuny logo](http://znuny.com/assets/images/logo_small.png)
+![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
+
+
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/master)
 
 Znuny4OTRS-ShowTicketUnlockTime
 ===============================
@@ -25,14 +28,14 @@ Download the package and install it via admin interface -> package manager.
 
 **Download**
 
-For download see [http://znuny.com/#!/znuny4otrs](http://znuny.com/#!/znuny4otrs)
+For download see [https://www.znuny.com/#!/znuny4otrs](https://www.znuny.com/#!/znuny4otrs)
 
 **Commercial Support**
 
-For this extension and for OTRS in general visit [http://znuny.com](http://znuny.com). Looking forward to hear from you!
+For this extension and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
- Your Znuny Team!
+Your Znuny Team!
 
- [http://znuny.com](http://znuny.com)
+[www.znuny.com](https://www.znuny.com)
