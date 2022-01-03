@@ -2,6 +2,7 @@
 <otrs_package version="1.0">
     <Name>Znuny-ShowTicketUnlockTime</Name>
     <Version>6.2.1</Version>
+    <ChangeLog Version="6.2.1" Date="2022-01-03 12:33:46 +0100">Ported to OTRS 6.2.</ChangeLog>
     <ChangeLog Version="6.2.1" Date="2022-01-03 10:56:36 +0100">Ported to 6.2.</ChangeLog>
     <ChangeLog Version="6.0.3" Date="2021-02-12 17:39:54 +0100">Happy new year. Tidied code.</ChangeLog>
     <ChangeLog Version="6.0.2" Date="2019-02-27 14:03:57 +0100">Tidied code.</ChangeLog>
