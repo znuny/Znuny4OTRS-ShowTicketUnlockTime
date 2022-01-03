@@ -1,9 +1,9 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/master)
+![Build status](https://badge.proxy.znuny.com/Znuny-ShowTicketUnlockTime/rel-6_1)
 
-Znuny4OTRS-ShowTicketUnlockTime
+Znuny-ShowTicketUnlockTime
 ===============================
 This feature shows the ticket unlock time in ticket zoom view.
 
@@ -24,15 +24,15 @@ Download the package and install it via admin interface -> package manager.
 
 **Prerequisites**
 
-- OTRS 6.0
+- Znuny 6.1
 
 **Download**
 
-For download see [https://www.znuny.com/#!/znuny4otrs](https://www.znuny.com/#!/znuny4otrs)
+For download see [https://www.znuny.com/en/add-ons](https://www.znuny.com/en/add-ons)
 
 **Commercial Support**
 
-For this extension and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
+For this extension and for Znuny in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
