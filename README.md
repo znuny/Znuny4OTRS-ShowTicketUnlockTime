@@ -1,7 +1,6 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-
-![Build status](https://badge.proxy.znuny.com/Znuny-ShowTicketUnlockTime/rel-6_1)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/rel-6_2)
 
 Znuny-ShowTicketUnlockTime
 ===============================
@@ -24,7 +23,7 @@ Download the package and install it via admin interface -> package manager.
 
 **Prerequisites**
 
-- Znuny 6.1
+- Znuny 6.2
 
 **Download**
 
