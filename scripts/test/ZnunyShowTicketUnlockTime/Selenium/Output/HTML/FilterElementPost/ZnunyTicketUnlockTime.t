@@ -15,13 +15,13 @@ use Kernel::System::VariableCheck qw(:all);
 use vars (qw($Self));
 
 # create configuration backup
-# get the Znuny4OTRS Selenium object
+# get the Znuny Selenium object
 my $SeleniumObject = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
 
 # store test function in variable so the Selenium object can handle errors/exceptions/dies etc.
 my $SeleniumTest = sub {
 
-    # initialize Znuny4OTRS Helpers and other needed objects
+    # initialize Znuny Helpers and other needed objects
     my $ZnunyHelperObject = $Kernel::OM->Get('Kernel::System::ZnunyHelper');
     my $HelperObject      = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
     my $QueueObject       = $Kernel::OM->Get('Kernel::System::Queue');

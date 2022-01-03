@@ -30,7 +30,7 @@ sub Run {
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
     my $LogObject    = $Kernel::OM->Get('Kernel::System::Log');
-    my $TimeObject   = $Kernel::OM->Get('Kernel::System::ZnunyTime');
+    my $TimeObject   = $Kernel::OM->Get('Kernel::System::Time');
     my $QueueObject  = $Kernel::OM->Get('Kernel::System::Queue');
 
     # return 1 if it's not ticket zoom
