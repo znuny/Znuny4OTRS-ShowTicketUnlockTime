@@ -8,7 +8,7 @@
     <ChangeLog Version="1.2.1" Date="2015-12-11 09:50:09 UTC">Refactoring OTRS 5 file structure.</ChangeLog>
     <ChangeLog Version="1.2.0" Date="2015-11-11 11:13:47 UTC">Ported to OTRS 5.0.</ChangeLog>
     <ChangeLog Version="1.1.0" Date="2015-06-11 15:50:51 UTC">Ported to 4.0.</ChangeLog>
-    <Framework>6.2.x</Framework>
+    <Framework>6.3.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
