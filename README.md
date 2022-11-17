@@ -1,6 +1,6 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/rel-6_2)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/rel-6_4)
 
 Znuny-ShowTicketUnlockTime
 ===============================
@@ -19,22 +19,22 @@ No configuration needed.
 
 **Installation**
 
-Download the package and install it via admin interface -> package manager.
+Download the [package](https://addons.znuny.com/api/addon_repos/public/2399/latest) and install it via admin interface -> package manager.
 
 **Prerequisites**
 
-- Znuny 6.2
+- Znuny 6.4
 
 **Download**
 
-For download see [https://www.znuny.com/en/add-ons](https://www.znuny.com/en/add-ons)
+Download the [latest version](https://addons.znuny.com/api/addon_repos/public/2399/latest).
 
 **Commercial Support**
 
-For this extension and for Znuny in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
+For this add-on and for Znuny in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
 Your Znuny Team!
 
-[www.znuny.com](https://www.znuny.com)
+[https://www.znuny.com/](https://www.znuny.com/)
