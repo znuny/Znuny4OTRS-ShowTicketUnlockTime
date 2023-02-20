@@ -23,7 +23,7 @@ Download the [package](https://addons.znuny.com/api/addon_repos/public/2399/late
 
 **Prerequisites**
 
-- Znuny 6.4
+- Znuny 6.5
 
 **Download**
 
