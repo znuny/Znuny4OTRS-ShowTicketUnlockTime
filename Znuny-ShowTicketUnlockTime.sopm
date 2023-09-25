@@ -2,9 +2,9 @@
 <otrs_package version="1.0">
     <Name>Znuny-ShowTicketUnlockTime</Name>
     <Version>6.5.1</Version>
-    <Framework>6.5.x</Framework>
+    <Framework>7.0.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
-    <URL>http://znuny.com/</URL>
+    <URL>https://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">This feature shows the ticket unlock time in ticket zoom view.</Description>
     <Description Lang="de">Diese Funktionalität zeigt Ihnen die Ticket-Entsperrzeit in der Ticket-Detail-Ansicht.</Description>
@@ -31,8 +31,8 @@
         <p>
         You are about to install a feature to show the ticket unlock time in ticket zoom view.
         </p>
-<br/>
-<br/>
+        <br/>
+        <br/>
         <p>
         Your Znuny Team!
         <br/>

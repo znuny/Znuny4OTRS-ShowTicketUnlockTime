@@ -1,6 +1,6 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/rel-6_4)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/rel-7_0)
 
 Znuny-ShowTicketUnlockTime
 ===============================
@@ -23,7 +23,7 @@ Download the [package](https://addons.znuny.com/api/addon_repos/public/2399/late
 
 **Prerequisites**
 
-- Znuny 6.5
+- Znuny 7.0
 
 **Download**
 

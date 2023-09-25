@@ -10,6 +10,7 @@ package Kernel::Output::HTML::FilterElementPost::ZnunyTicketUnlockTime;
 
 use strict;
 use warnings;
+use utf8;
 
 our $ObjectManagerDisabled = 1;
 
@@ -41,7 +42,6 @@ sub Run {
     return 1 if !$TicketID;
 
     my %Ticket = $TicketObject->TicketGet( TicketID => $TicketID );
-
     return 1 if !%Ticket;
     return 1 if !$Ticket{UnlockTimeout};
     return 1 if $Ticket{Lock} ne 'lock';
@@ -70,20 +70,21 @@ sub Run {
 
     # information markup
     my $HTML = '
-    <label>' . $LayoutObject->{LanguageObject}->Translate('Unlock timeout') . ':</label>
-    <p id="UnlockTimeout" class="Value">
-        ' . $TimeDestHuman . '
-        <br>
-        ' . $TimeDest . '
-    </p>
-    <div class="Clear"></div>
+    <span>
+        <label>' . $LayoutObject->{LanguageObject}->Translate('Unlock timeout') . ':</label>
+        <p id="UnlockTimeout" class="Value" title="' . $TimeDest . '">
+            ' . $TimeDestHuman . '
+            <br>
+            ' . $TimeDest . '
+        </p>
+    </span>
 ';
 
     # add information
     return 1 if ${ $Param{Data} } !~ m{ <div [^>]* ContentColumn [^>]* > }xmsi;
 
     my $QueueLabel = '<label>' . $LayoutObject->{LanguageObject}->Translate('Queue') . ':</label>';
-    ${ $Param{Data} } =~ s{\Q$QueueLabel\E .*? <div \s class="Clear"><\/div> }{$& $HTML}xms;
+    ${ $Param{Data} } =~ s{\Q$QueueLabel\E .*? <\/span>}{$& $HTML}xms;
 
     return 1;
 }
