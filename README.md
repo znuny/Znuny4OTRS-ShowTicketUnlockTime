@@ -1,6 +1,6 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/rel-7_0)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-ShowTicketUnlockTime/rel-7_2)
 
 Znuny-ShowTicketUnlockTime
 ==========================
@@ -15,7 +15,7 @@ The unlock time is only shown if:
 
 **Prerequisites**
 
-- Znuny 7.1
+- Znuny 7.2
 
 **Installation**
 
