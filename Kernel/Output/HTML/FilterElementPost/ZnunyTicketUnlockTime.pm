@@ -81,7 +81,6 @@ sub Run {
 ';
 
     # add information
-    return 1 if ${ $Param{Data} } !~ m{ <div [^>]* ContentColumn [^>]* > }xmsi;
 
     my $QueueLabel = '<label>' . $LayoutObject->{LanguageObject}->Translate('Queue') . ':</label>';
     ${ $Param{Data} } =~ s{\Q$QueueLabel\E .*? <\/span>}{$& $HTML}xms;
